@@ -18,7 +18,9 @@ jobs:
       password: ${{ secrets.DOCKER_PASSWORD }}
  
    - name: Build Docker image
-     run: docker build -t manuelanut/task_intership:latest . 
+     run: |
+      docker build -t manuelanut/task_intership:latest . 
+      working-directory: 2-java_task
 
    - name: Tag Docker image
      run: docker tag manuelanut/task_intership:latest manuelanut/task_intership:$(git rev-parse --short HEAD)
