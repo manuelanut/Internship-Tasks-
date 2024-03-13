@@ -7,7 +7,7 @@ Unfortunately, because of the Docker application, i couldn't complete the MySQL 
 -CREATE USER 'new_user'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON company.* TO 'new_user'@'%';
 FLUSH PRIVILEGES;
-We create a user and grand all the permissions required for the database company <br>
+to create a user and grand all the permissions required for the database company <br>
 -SELECT department, AVG(salary) AS average_salary FROM employees GROUP BY department; <br>
 Query to find the average salary for each department
 
